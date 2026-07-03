@@ -4,32 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Akshay Lukhi &amp; Co. | Accounting, Tax &amp; Compliance, Surat
+      Akshay Lukhi & Co. | Chartered Financial &amp; Tax Consultants, Surat
     </title>
     <meta
       name="description"
-      content="Akshay Lukhi & Co. — Accounting, Income Tax, GST, Audit, Insurance, Investment, Business Registration, EPCG & Trademark services in Surat."
+      content="Akshay Lukhi & Co. — Accounting, Income Tax, GST, Audit, Insurance, Investment, Business Registration, EPCG & Trademark services in Surat, Gujarat."
     />
+    <link rel="icon" href="./logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
-        --paper: #f6f3eb;
-        --paper-dim: #efeadc;
-        --navy: #0e2a3f;
-        --navy-deep: #081c29;
-        --gold: #c08a34;
-        --gold-light: #dcb05c;
-        --teal: #145c52;
-        --ink: #1c2430;
-        --muted: #5b6570;
-        --line: rgba(14, 42, 63, 0.14);
+        --navy: #122a46;
+        --blue: #2d60a1;
+        --blue-light: #4c82c7;
+        --sand: #c9a55c;
+        --paper: #f6f5f1;
+        --paper-2: #efeee8;
+        --ink: #1c2530;
+        --ink-soft: #5b6472;
+        --line: #dddad0;
         --radius: 2px;
-        --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
       }
 
       * {
@@ -44,128 +43,115 @@
         background: var(--paper);
         color: var(--ink);
         font-family: "Inter", sans-serif;
-        font-size: 16px;
         line-height: 1.6;
         overflow-x: hidden;
       }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
       h1,
       h2,
       h3,
-      h4 {
+      .display {
         font-family: "Fraunces", serif;
-        font-weight: 600;
-        color: var(--navy);
-        letter-spacing: -0.01em;
+      }
+      .eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--blue);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 24px;
+        height: 1px;
+        background: var(--sand);
+        display: inline-block;
       }
       a {
         color: inherit;
         text-decoration: none;
       }
-      img,
-      svg {
-        display: block;
+      ul {
+        list-style: none;
+      }
+      img {
         max-width: 100%;
-      }
-      .mono {
-        font-family: "IBM Plex Mono", monospace;
-        letter-spacing: 0.06em;
-      }
-      .wrap {
-        max-width: 1160px;
-        margin: 0 auto;
-        padding: 0 32px;
+        display: block;
       }
       section {
         position: relative;
       }
-
-      /* ---------- reveal ---------- */
-      .reveal {
-        opacity: 0;
-        transform: translateY(28px);
-        transition:
-          opacity 0.8s var(--ease),
-          transform 0.8s var(--ease);
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 32px;
       }
-      .reveal.in {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .reveal-stagger > * {
-        opacity: 0;
-        transform: translateY(22px);
-        transition:
-          opacity 0.7s var(--ease),
-          transform 0.7s var(--ease);
-      }
-      .reveal-stagger.in > * {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .reveal-stagger.in > *:nth-child(1) {
-        transition-delay: 0.05s;
-      }
-      .reveal-stagger.in > *:nth-child(2) {
-        transition-delay: 0.13s;
-      }
-      .reveal-stagger.in > *:nth-child(3) {
-        transition-delay: 0.21s;
-      }
-      .reveal-stagger.in > *:nth-child(4) {
-        transition-delay: 0.29s;
-      }
-      .reveal-stagger.in > *:nth-child(5) {
-        transition-delay: 0.37s;
-      }
-      .reveal-stagger.in > *:nth-child(6) {
-        transition-delay: 0.45s;
-      }
-      .reveal-stagger.in > *:nth-child(7) {
-        transition-delay: 0.53s;
-      }
-      .reveal-stagger.in > *:nth-child(8) {
-        transition-delay: 0.61s;
-      }
-      .reveal-stagger.in > *:nth-child(9) {
-        transition-delay: 0.69s;
-      }
-
-      /* ---------- eyebrow ---------- */
-      .eyebrow {
-        display: flex;
+      .btn {
+        display: inline-flex;
         align-items: center;
-        gap: 12px;
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 12.5px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--teal);
-        margin-bottom: 18px;
+        gap: 10px;
+        padding: 14px 26px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.92rem;
+        letter-spacing: 0.01em;
+        border-radius: var(--radius);
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition:
+          transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+          background 0.35s,
+          color 0.35s,
+          border-color 0.35s;
       }
-      .eyebrow::before {
-        content: "";
-        width: 28px;
-        height: 1px;
-        background: var(--gold);
+      .btn-primary {
+        background: var(--blue);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: var(--navy);
+        transform: translateY(-2px);
+      }
+      .btn-ghost {
+        border-color: rgba(18, 42, 70, 0.25);
+        color: var(--navy);
+      }
+      .btn-ghost:hover {
+        border-color: var(--navy);
+        transform: translateY(-2px);
       }
 
-      /* ---------- nav ---------- */
+      /* ---------- HEADER ---------- */
       header {
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        right: 0;
         z-index: 100;
-        background: rgba(14, 42, 63, 0.97);
-        backdrop-filter: blur(6px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        transition: box-shadow 0.3s var(--ease);
+        padding: 20px 0;
+        transition:
+          background 0.4s ease,
+          padding 0.4s ease,
+          box-shadow 0.4s ease;
       }
       header.scrolled {
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+        background: rgba(246, 245, 241, 0.92);
+        backdrop-filter: blur(10px);
+        padding: 12px 0;
+        box-shadow: 0 1px 0 var(--line);
       }
-      nav {
-        max-width: 1160px;
-        margin: 0 auto;
-        padding: 18px 32px;
+      header .wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -175,1057 +161,1413 @@
         align-items: center;
         gap: 12px;
       }
-      .brand-mark {
-        width: 38px;
-        height: 38px;
-        flex-shrink: 0;
+      .brand img {
+        height: 40px;
+        width: auto;
       }
       .brand-text {
-        color: var(--paper);
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
       }
       .brand-text .name {
         font-family: "Fraunces", serif;
-        font-size: 17px;
         font-weight: 600;
-        color: #fff;
-        line-height: 1.15;
+        font-size: 1.05rem;
+        color: var(--navy);
       }
-      .brand-text .sub {
+      .brand-text .tag {
         font-family: "IBM Plex Mono", monospace;
-        font-size: 10px;
-        letter-spacing: 0.14em;
-        color: var(--gold-light);
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
+        color: var(--blue);
       }
-      .nav-links {
+      nav.links {
         display: flex;
-        gap: 36px;
-        list-style: none;
-      }
-      .nav-links a {
-        position: relative;
-        color: rgba(246, 243, 235, 0.82);
-        font-size: 14.5px;
+        gap: 34px;
+        font-size: 0.9rem;
         font-weight: 500;
-        padding: 6px 0;
-        transition: color 0.25s;
       }
-      .nav-links a::after {
+      nav.links a {
+        color: var(--ink-soft);
+        position: relative;
+        padding: 4px 0;
+        transition: color 0.3s;
+      }
+      nav.links a::after {
         content: "";
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 0;
+        width: 0%;
         height: 1px;
-        background: var(--gold);
-        transition: width 0.3s var(--ease);
+        background: var(--blue);
+        transition: width 0.3s ease;
       }
-      .nav-links a:hover {
-        color: #fff;
+      nav.links a:hover {
+        color: var(--navy);
       }
-      .nav-links a:hover::after {
+      nav.links a:hover::after {
         width: 100%;
       }
-      .nav-cta {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 12.5px;
-        letter-spacing: 0.05em;
-        color: var(--navy-deep);
-        background: var(--gold);
-        padding: 10px 20px;
-        border-radius: var(--radius);
-        transition:
-          background 0.25s,
-          transform 0.25s;
-        white-space: nowrap;
+      .header-cta {
+        display: flex;
+        align-items: center;
+        gap: 18px;
       }
-      .nav-cta:hover {
-        background: var(--gold-light);
-        transform: translateY(-1px);
+      .header-cta .btn-primary {
+        padding: 11px 20px;
+        font-size: 0.85rem;
       }
-      .nav-toggle {
+      .menu-toggle {
         display: none;
         flex-direction: column;
         gap: 5px;
-        cursor: pointer;
         background: none;
         border: none;
+        cursor: pointer;
         padding: 6px;
       }
-      .nav-toggle span {
+      .menu-toggle span {
         width: 24px;
         height: 2px;
-        background: var(--paper);
+        background: var(--navy);
+        display: block;
+        transition: 0.3s;
       }
 
-      /* ---------- hero ---------- */
+      /* ---------- HERO ---------- */
       .hero {
+        padding: 168px 0 110px;
+        position: relative;
         background:
           radial-gradient(
-            ellipse at 78% 8%,
-            rgba(192, 138, 52, 0.16),
-            transparent 55%
+            1100px 480px at 82% -10%,
+            rgba(45, 96, 161, 0.1),
+            transparent 60%
           ),
-          linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
-        color: var(--paper);
-        padding: 96px 0 110px;
+          var(--paper);
         overflow: hidden;
-        position: relative;
       }
-      .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: repeating-linear-gradient(
-          0deg,
-          rgba(246, 243, 235, 0.035) 0px,
-          rgba(246, 243, 235, 0.035) 1px,
-          transparent 1px,
-          transparent 64px
-        );
-        pointer-events: none;
-      }
-      .hero-grid {
+      .hero .wrap {
         display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 40px;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 50px;
         align-items: center;
-        position: relative;
-        z-index: 2;
-      }
-      .hero .eyebrow {
-        color: var(--gold-light);
-      }
-      .hero .eyebrow::before {
-        background: var(--gold-light);
       }
       .hero h1 {
-        font-size: clamp(38px, 5vw, 60px);
-        line-height: 1.06;
-        color: #fff;
-        margin-bottom: 22px;
+        font-size: clamp(2.4rem, 4.6vw, 3.7rem);
+        font-weight: 600;
+        color: var(--navy);
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        margin: 18px 0 22px;
       }
       .hero h1 em {
         font-style: italic;
-        color: var(--gold-light);
         font-weight: 500;
+        color: var(--blue);
       }
-      .hero p.lede {
-        font-size: 17.5px;
-        color: rgba(246, 243, 235, 0.78);
-        max-width: 480px;
-        margin-bottom: 36px;
+      .hero p.lead {
+        font-size: 1.08rem;
+        color: var(--ink-soft);
+        max-width: 520px;
+        margin-bottom: 34px;
       }
       .hero-actions {
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
-        margin-bottom: 44px;
+        margin-bottom: 38px;
       }
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 14px 26px;
-        border-radius: var(--radius);
-        font-size: 14.5px;
-        font-weight: 600;
-        border: 1px solid transparent;
-        cursor: pointer;
-        transition:
-          transform 0.3s var(--ease),
-          background 0.3s,
-          color 0.3s,
-          border-color 0.3s;
-      }
-      .btn-primary {
-        background: var(--gold);
-        color: var(--navy-deep);
-      }
-      .btn-primary:hover {
-        background: var(--gold-light);
-        transform: translateY(-2px);
-      }
-      .btn-ghost {
-        border-color: rgba(246, 243, 235, 0.32);
-        color: var(--paper);
-      }
-      .btn-ghost:hover {
-        border-color: var(--gold-light);
-        color: var(--gold-light);
-        transform: translateY(-2px);
-      }
-
       .hero-meta {
         display: flex;
-        gap: 34px;
-        flex-wrap: wrap;
-        padding-top: 28px;
-        border-top: 1px solid rgba(246, 243, 235, 0.14);
-      }
-      .hero-meta div {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-      .hero-meta .k {
+        gap: 30px;
         font-family: "IBM Plex Mono", monospace;
-        font-size: 10.5px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gold-light);
+        font-size: 0.78rem;
+        color: var(--ink-soft);
       }
-      .hero-meta .v {
-        font-size: 14px;
-        color: rgba(246, 243, 235, 0.88);
+      .hero-meta strong {
+        display: block;
+        color: var(--navy);
+        font-family: "Fraunces", serif;
+        font-size: 1.15rem;
+        font-weight: 600;
       }
 
-      /* seal */
-      .seal-wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      /* Signature ascent-chart graphic */
+      .ascent-wrap {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .seal {
-        width: min(320px, 82%);
+      .ascent-card {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1.02;
+        background: linear-gradient(160deg, var(--navy), var(--blue) 90%);
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 30px 60px -20px rgba(18, 42, 70, 0.45);
       }
-      .seal-ring,
-      .seal-inner-ring {
+      .ascent-card svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .ascent-line {
         fill: none;
-        stroke: var(--gold-light);
-        stroke-width: 1.4;
-      }
-      .seal-draw {
+        stroke: #f6f5f1;
+        stroke-width: 2.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
         stroke-dasharray: 900;
         stroke-dashoffset: 900;
-        animation: draw 2.4s var(--ease) forwards 0.3s;
+        animation: draw 2.6s cubic-bezier(0.3, 0.8, 0.3, 1) 0.4s forwards;
       }
-      .seal-draw-2 {
-        stroke-dasharray: 520;
-        stroke-dashoffset: 520;
-        animation: draw 1.8s var(--ease) forwards 1s;
-      }
-      .seal-star {
+      .ascent-arrowhead {
         fill: none;
-        stroke: var(--gold-light);
-        stroke-width: 1.4;
-        stroke-dasharray: 260;
-        stroke-dashoffset: 260;
-        animation: draw 1.4s var(--ease) forwards 1.6s;
+        stroke: var(--sand);
+        stroke-width: 2.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 120;
+        stroke-dashoffset: 120;
+        animation: draw 0.7s ease 2.6s forwards;
       }
-      .seal-text {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 8.6px;
-        letter-spacing: 2px;
-        fill: var(--paper);
+      .ascent-dot {
         opacity: 0;
-        animation: fadeIn 1s ease forwards 2.4s;
+        animation: pop 0.5s ease forwards;
       }
-      .seal-spin {
-        animation: spin 60s linear infinite;
-        transform-origin: 160px 160px;
+      .ascent-grid line {
+        stroke: rgba(246, 245, 241, 0.12);
+        stroke-width: 1;
+      }
+      .ascent-label {
+        font-family: "IBM Plex Mono", monospace;
+        fill: rgba(246, 245, 241, 0.55);
+        font-size: 9px;
+        letter-spacing: 0.05em;
       }
       @keyframes draw {
         to {
           stroke-dashoffset: 0;
         }
       }
-      @keyframes fadeIn {
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: scale(0);
+        }
         to {
           opacity: 1;
-        }
-      }
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
+          transform: scale(1);
         }
       }
 
-      /* ---------- section headers ---------- */
+      /* ---------- MARQUEE STRIP ---------- */
+      .strip {
+        background: var(--navy);
+        color: #f6f5f1;
+        padding: 14px 0;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .strip .track {
+        display: inline-flex;
+        gap: 60px;
+        animation: scroll-left 28s linear infinite;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .strip .track span {
+        opacity: 0.85;
+      }
+      .strip .track span::after {
+        content: "◆";
+        margin-left: 60px;
+        color: var(--sand);
+      }
+      @keyframes scroll-left {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* ---------- SECTION GENERIC ---------- */
+      .section {
+        padding: 110px 0;
+      }
       .section-head {
         max-width: 640px;
         margin-bottom: 56px;
       }
       .section-head h2 {
-        font-size: clamp(28px, 3.4vw, 40px);
-        margin-bottom: 16px;
+        font-size: clamp(1.9rem, 3vw, 2.5rem);
+        font-weight: 600;
+        color: var(--navy);
+        margin-top: 14px;
+        line-height: 1.18;
       }
       .section-head p {
-        color: var(--muted);
-        font-size: 16px;
+        color: var(--ink-soft);
+        margin-top: 16px;
+        font-size: 1.02rem;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+          transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
       }
 
-      /* ---------- about ---------- */
+      /* ---------- ABOUT ---------- */
       .about {
-        padding: 112px 0;
-        background: var(--paper);
-        position: relative;
+        background: var(--paper-2);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
       }
-      .about-grid {
+      .about .wrap {
         display: grid;
         grid-template-columns: 0.9fr 1.1fr;
         gap: 64px;
-        align-items: start;
+        align-items: center;
       }
-      .ledger {
-        background: #fff;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        padding: 38px 34px;
+      .about-portrait {
         position: relative;
-        box-shadow: 0 24px 48px -32px rgba(14, 42, 63, 0.35);
-      }
-      .ledger::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, var(--teal), var(--gold));
-      }
-      .ledger .role {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 11px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--teal);
-        margin-bottom: 10px;
-      }
-      .ledger h3 {
-        font-size: 26px;
-        margin-bottom: 18px;
-      }
-      .ledger-rows {
-        border-top: 1px solid var(--line);
-        margin-top: 20px;
-      }
-      .ledger-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 14px 0;
-        border-bottom: 1px dashed var(--line);
-        font-size: 14px;
-      }
-      .ledger-row span:first-child {
-        color: var(--muted);
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 12px;
-        letter-spacing: 0.04em;
-      }
-      .ledger-row span:last-child {
-        font-weight: 600;
-        color: var(--navy);
-        text-align: right;
-      }
-      .about-copy p {
-        color: var(--ink);
-        font-size: 16.5px;
-        margin-bottom: 20px;
-        max-width: 560px;
-      }
-      .about-copy p.lead {
-        font-size: 19px;
-        color: var(--navy);
-        font-family: "Fraunces", serif;
-        font-weight: 500;
-        line-height: 1.45;
-      }
-      .pillars {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-top: 32px;
-      }
-      .pillar {
-        border-left: 2px solid var(--gold);
-        padding-left: 16px;
-      }
-      .pillar h4 {
-        font-size: 15.5px;
-        margin-bottom: 6px;
-        color: var(--navy);
-      }
-      .pillar p {
-        font-size: 13.8px;
-        color: var(--muted);
-        margin: 0;
-      }
-
-      /* ---------- services ---------- */
-      .services {
-        padding: 112px 0;
         background: var(--navy);
-        position: relative;
+        aspect-ratio: 4/5;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
-      .services::before {
+      .about-portrait img {
+        /* height: 78px; */
+        /* filter: brightness(0) invert(1); */
+        opacity: 0.92;
+      }
+      .about-portrait::before {
         content: "";
         position: absolute;
         inset: 0;
-        background-image: repeating-linear-gradient(
-          0deg,
-          rgba(246, 243, 235, 0.03) 0px,
-          rgba(246, 243, 235, 0.03) 1px,
-          transparent 1px,
-          transparent 48px
+        background: repeating-linear-gradient(
+          135deg,
+          rgba(246, 245, 241, 0.05) 0 2px,
+          transparent 2px 22px
         );
       }
-      .services .eyebrow {
-        color: var(--gold-light);
-      }
-      .services .eyebrow::before {
-        background: var(--gold-light);
-      }
-      .services .section-head h2 {
-        color: #fff;
-      }
-      .services .section-head p {
-        color: rgba(246, 243, 235, 0.62);
-      }
-      .service-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1px;
-        background: rgba(246, 243, 235, 0.12);
-        border: 1px solid rgba(246, 243, 235, 0.12);
-        position: relative;
-        z-index: 1;
-      }
-      .service-card {
-        background: var(--navy);
-        padding: 34px 28px;
-        transition: background 0.4s var(--ease);
-        position: relative;
-        overflow: hidden;
-      }
-      .service-card::after {
-        content: "";
+      .about-card {
         position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        background: var(--gold);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.4s var(--ease);
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background: rgba(246, 245, 241, 0.08);
+        border: 1px solid rgba(246, 245, 241, 0.18);
+        backdrop-filter: blur(6px);
+        border-radius: 2px;
+        padding: 16px 18px;
+        color: #f6f5f1;
       }
-      .service-card:hover {
-        background: var(--navy-deep);
-      }
-      .service-card:hover::after {
-        transform: scaleX(1);
-      }
-      .service-code {
+      .about-card .k {
         font-family: "IBM Plex Mono", monospace;
-        font-size: 12px;
+        font-size: 0.68rem;
         letter-spacing: 0.1em;
-        color: var(--gold-light);
-        margin-bottom: 22px;
-        display: inline-block;
-        transition: transform 0.35s var(--ease);
+        text-transform: uppercase;
+        color: var(--sand);
       }
-      .service-card:hover .service-code {
-        transform: translateX(4px);
-      }
-      .service-card h3 {
-        color: #fff;
-        font-size: 19.5px;
-        margin-bottom: 10px;
-        font-weight: 600;
-      }
-      .service-card p {
-        color: rgba(246, 243, 235, 0.58);
-        font-size: 14px;
+      .about-card .v {
+        font-family: "Fraunces", serif;
+        font-size: 1.15rem;
+        margin-top: 4px;
       }
 
-      /* ---------- contact ---------- */
-      .contact {
-        padding: 112px 0;
-        background: var(--paper-dim);
+      .about-copy h2 {
+        font-size: clamp(1.9rem, 3vw, 2.4rem);
+        color: var(--navy);
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 14px 0 20px;
       }
-      .contact-grid {
+      .about-copy p {
+        color: var(--ink-soft);
+        margin-bottom: 16px;
+      }
+      .about-points {
+        margin-top: 28px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 56px;
-        align-items: start;
+        gap: 18px 28px;
       }
-      .contact-cards {
+      .about-points li {
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.92rem;
+        color: var(--ink);
+      }
+      .about-points svg {
+        flex-shrink: 0;
+        margin-top: 2px;
+        width: 18px;
+        height: 18px;
+        stroke: var(--blue);
+      }
+
+      /* ---------- SERVICES ---------- */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 1px;
         background: var(--line);
         border: 1px solid var(--line);
       }
-      .contact-card {
-        background: var(--paper-dim);
-        padding: 26px 28px;
-        display: flex;
-        gap: 18px;
-        align-items: flex-start;
-        transition: background 0.3s;
+      .service-card {
+        background: var(--paper);
+        padding: 38px 32px;
+        transition:
+          background 0.4s ease,
+          transform 0.4s ease;
+        position: relative;
       }
-      .contact-card:hover {
+      .service-card:hover {
         background: #fff;
       }
-      .contact-card .ic {
-        width: 38px;
-        height: 38px;
-        flex-shrink: 0;
-        border: 1px solid var(--gold);
-        border-radius: 50%;
+      .service-num {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--sand);
+        letter-spacing: 0.08em;
+      }
+      .service-icon {
+        width: 44px;
+        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--gold);
+        margin: 18px 0 20px;
+        border-radius: 50%;
+        background: rgba(45, 96, 161, 0.08);
+        transition:
+          background 0.4s ease,
+          transform 0.4s ease;
       }
-      .contact-card .ic svg {
-        width: 18px;
-        height: 18px;
+      .service-card:hover .service-icon {
+        background: var(--blue);
+        transform: rotate(-6deg) scale(1.05);
       }
-      .contact-card .k {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 10.5px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 6px;
+      .service-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: var(--blue);
+        fill: none;
+        stroke-width: 1.6;
+        transition: stroke 0.4s ease;
       }
-      .contact-card .v {
-        font-size: 16px;
+      .service-card:hover .service-icon svg {
+        stroke: #fff;
+      }
+      .service-card h3 {
+        font-family: "Fraunces", serif;
+        font-size: 1.18rem;
         font-weight: 600;
         color: var(--navy);
+        margin-bottom: 10px;
       }
-      .contact-card .v.small {
-        font-weight: 500;
-        font-size: 14.5px;
-        line-height: 1.55;
-      }
-      .map-frame {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        overflow: hidden;
-        height: 100%;
-        min-height: 340px;
-        filter: grayscale(0.15) contrast(1.02);
-      }
-      .map-frame iframe {
-        width: 100%;
-        height: 100%;
-        min-height: 340px;
-        border: 0;
-        display: block;
+      .service-card p {
+        font-size: 0.9rem;
+        color: var(--ink-soft);
       }
 
-      /* ---------- footer ---------- */
-      footer {
-        background: var(--navy-deep);
-        color: rgba(246, 243, 235, 0.6);
-        padding: 44px 0;
+      /* ---------- PROCESS / WHY STRIP ---------- */
+      .why {
+        background: var(--navy);
+        color: #f6f5f1;
       }
-      .footer-grid {
+      .why .section-head h2 {
+        color: #fff;
+      }
+      .why .section-head p {
+        color: rgba(246, 245, 241, 0.65);
+      }
+      .why .eyebrow {
+        color: var(--sand);
+      }
+      .why .eyebrow::before {
+        background: #f6f5f1;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px;
+      }
+      .why-item {
+        border-top: 1px solid rgba(246, 245, 241, 0.2);
+        padding-top: 20px;
+      }
+      .why-item .mono {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--sand);
+        letter-spacing: 0.1em;
+      }
+      .why-item h4 {
+        font-family: "Fraunces", serif;
+        font-size: 1.15rem;
+        margin: 10px 0 8px;
+        font-weight: 600;
+      }
+      .why-item p {
+        font-size: 0.88rem;
+        color: rgba(246, 245, 241, 0.68);
+      }
+
+      /* ---------- CONTACT ---------- */
+      .contact .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+      .contact-list {
+        margin-top: 10px;
+      }
+      .contact-list li {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 22px 0;
+        border-top: 1px solid var(--line);
+      }
+      .contact-list li:last-child {
+        border-bottom: 1px solid var(--line);
+      }
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(45, 96, 161, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .contact-icon svg {
+        width: 19px;
+        height: 19px;
+        stroke: var(--blue);
+        fill: none;
+        stroke-width: 1.6;
+      }
+      .contact-list .k {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        margin-bottom: 4px;
+      }
+      .contact-list .v {
+        font-size: 1.02rem;
+        color: var(--navy);
+        font-weight: 500;
+      }
+      .contact-list a.v:hover {
+        color: var(--blue);
+      }
+
+      .contact-card {
+        background: var(--navy);
+        border-radius: 4px;
+        padding: 44px;
+        color: #f6f5f1;
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-card::before {
+        content: "";
+        position: absolute;
+        right: -40px;
+        top: -40px;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(200, 165, 92, 0.25),
+          transparent 70%
+        );
+      }
+      .contact-card h3 {
+        font-family: "Fraunces", serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
+      .contact-card p {
+        color: rgba(246, 245, 241, 0.7);
+        margin-bottom: 28px;
+        font-size: 0.95rem;
+      }
+      .form-row {
+        margin-bottom: 16px;
+      }
+      .form-row label {
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.66rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--sand);
+        margin-bottom: 7px;
+      }
+      .form-row input,
+      .form-row textarea {
+        width: 100%;
+        background: rgba(246, 245, 241, 0.06);
+        border: 1px solid rgba(246, 245, 241, 0.22);
+        border-radius: 2px;
+        padding: 12px 14px;
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+        outline: none;
+        transition:
+          border-color 0.3s,
+          background 0.3s;
+      }
+      .form-row input::placeholder,
+      .form-row textarea::placeholder {
+        color: rgba(246, 245, 241, 0.35);
+      }
+      .form-row input:focus,
+      .form-row textarea:focus {
+        border-color: var(--sand);
+        background: rgba(246, 245, 241, 0.1);
+      }
+      .form-row textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+      .contact-card .btn-primary {
+        width: 100%;
+        justify-content: center;
+        background: var(--sand);
+        color: var(--navy);
+      }
+      .contact-card .btn-primary:hover {
+        background: #fff;
+      }
+
+      /* ---------- FOOTER ---------- */
+      footer {
+        background: var(--paper-2);
+        border-top: 1px solid var(--line);
+        padding: 44px 0 28px;
+      }
+      footer .wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 18px;
+        gap: 16px;
       }
-      .footer-grid .brand-text .name {
-        color: #fff;
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
       }
-      footer .fnote {
-        font-size: 13px;
+      .footer-brand img {
+        height: 30px;
+      }
+      .footer-brand span {
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        color: var(--navy);
+        font-size: 1rem;
+      }
+      footer .fine {
         font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--ink-soft);
         letter-spacing: 0.03em;
       }
+      .footer-links {
+        display: flex;
+        gap: 24px;
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+      }
+      .footer-links a:hover {
+        color: var(--blue);
+      }
 
-      /* ---------- responsive ---------- */
-      @media (max-width: 900px) {
-        .hero-grid {
-          grid-template-columns: 1fr;
+      /* ---------- WHATSAPP FAB ---------- */
+      .fab {
+        position: fixed;
+        bottom: 26px;
+        right: 26px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 28px -8px rgba(18, 42, 70, 0.5);
+        z-index: 90;
+        transition: transform 0.3s ease;
+        animation: pulse 2.6s ease-in-out infinite;
+        overflow: hidden;
+      }
+      .fab:hover {
+        transform: scale(1.08);
+      }
+      .fab svg {
+        width: 56px;
+        height: 56px;
+        stroke: #fff;
+        fill: none;
+        stroke-width: 1.8;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow:
+            0 12px 28px -8px rgba(18, 42, 70, 0.5),
+            0 0 0 0 rgba(45, 96, 161, 0.35);
         }
-        .seal-wrap {
-          order: -1;
-          margin-bottom: 20px;
-        }
-        .seal {
-          width: 200px;
-        }
-        .about-grid,
-        .contact-grid {
-          grid-template-columns: 1fr;
-          gap: 40px;
-        }
-        .service-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .nav-links,
-        .nav-cta {
-          display: none;
-        }
-        .nav-toggle {
-          display: flex;
+        50% {
+          box-shadow:
+            0 12px 28px -8px rgba(18, 42, 70, 0.5),
+            0 0 0 10px rgba(45, 96, 161, 0);
         }
       }
-      @media (max-width: 600px) {
+
+      /* ---------- RESPONSIVE ---------- */
+      @media (max-width: 980px) {
+        nav.links {
+          display: none;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+        .hero .wrap {
+          grid-template-columns: 1fr;
+          gap: 56px;
+        }
+        .ascent-wrap {
+          max-width: 420px;
+          margin: 0 auto;
+        }
+        .about .wrap {
+          grid-template-columns: 1fr;
+        }
+        .about-portrait {
+          max-width: 340px;
+          margin: 0 auto;
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .contact .wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 620px) {
         .wrap {
           padding: 0 20px;
         }
-        .service-grid {
-          grid-template-columns: 1fr;
-        }
-        .pillars {
-          grid-template-columns: 1fr;
+        .section {
+          padding: 76px 0;
         }
         .hero {
-          padding: 70px 0 70px;
+          padding: 140px 0 70px;
         }
-        .hero-meta {
-          gap: 22px;
+        .services-grid {
+          grid-template-columns: 1fr;
         }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
+        .why-grid {
+          grid-template-columns: 1fr;
         }
-        .reveal,
-        .reveal-stagger > * {
-          opacity: 1;
-          transform: none;
+        .about-points {
+          grid-template-columns: 1fr;
+        }
+        .header-cta .btn-primary {
+          display: none;
+        }
+        footer .wrap {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     </style>
   </head>
   <body>
+    <!-- ================= HEADER ================= -->
     <header id="siteHeader">
-      <nav>
+      <div class="wrap">
         <div class="brand">
-          <svg
-            class="brand-mark"
-            viewBox="0 0 40 40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18.5"
-              fill="none"
-              stroke="#C08A34"
-              stroke-width="1.4"
-            />
-            <circle
-              cx="20"
-              cy="20"
-              r="13.5"
-              fill="none"
-              stroke="#DCB05C"
-              stroke-width="1"
-            />
-            <text
-              x="20"
-              y="24.5"
-              text-anchor="middle"
-              font-family="Fraunces, serif"
-              font-size="14"
-              fill="#F6F3EB"
-            >
-              AL
-            </text>
-          </svg>
+          <img src="logo.png" alt="Akshay Lukhi & Co. logo" />
           <div class="brand-text">
-            <div class="name">Akshay Lukhi &amp; Co.</div>
-            <div class="sub">Accounting &amp; Tax Consultants</div>
+            <span class="name">Akshay Lukhi &amp; Co.</span>
+            <span class="tag">Financial &amp; Tax Consultants</span>
           </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a class="nav-cta" href="tel:+919601841748">Call 96018 41748</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
+        <nav class="links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a class="btn btn-primary" href="tel:+919601841748">Call Now</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
+    <!-- mobile nav -->
+    <div
+      id="mobileNav"
+      style="
+        position: fixed;
+        inset: 0;
+        background: var(--navy);
+        z-index: 99;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+      "
+    >
+      <a
+        href="#about"
+        style="
+          color: #fff;
+          font-family: &quot;Fraunces&quot;, serif;
+          font-size: 1.5rem;
+        "
+        >About</a
+      >
+      <a
+        href="#services"
+        style="
+          color: #fff;
+          font-family: &quot;Fraunces&quot;, serif;
+          font-size: 1.5rem;
+        "
+        >Services</a
+      >
+      <a
+        href="#why"
+        style="
+          color: #fff;
+          font-family: &quot;Fraunces&quot;, serif;
+          font-size: 1.5rem;
+        "
+        >Why Us</a
+      >
+      <a
+        href="#contact"
+        style="
+          color: #fff;
+          font-family: &quot;Fraunces&quot;, serif;
+          font-size: 1.5rem;
+        "
+        >Contact</a
+      >
+    </div>
+
+    <!-- ================= HERO ================= -->
     <section class="hero">
-      <div class="wrap hero-grid">
+      <div class="wrap">
         <div>
-          <div class="eyebrow">Established Practice · Surat</div>
-          <h1 class="reveal in">
-            Clarity in your <em>accounts</em>,<br />confidence in
-            <em>compliance</em>.
+          <div class="eyebrow">
+            Surat, Gujarat &mdash; Est. Practice of Akshay Lukhi
+          </div>
+          <h1>
+            Steady numbers.<br />Clear compliance.<br /><em>An upward line.</em>
           </h1>
-          <p class="lede">
-            Akshay Lukhi &amp; Co. is a Surat-based proprietorship firm handling
-            accounting, taxation, audit, insurance, investment and
-            business-registration work — so you can run your business without
-            chasing paperwork.
+          <p class="lead">
+            Akshay Lukhi &amp; Co. handles accounting, taxation, audit and
+            registration work for individuals and businesses across Surat
+            &mdash; so your finances stay accurate, compliant, and moving in one
+            direction: up.
           </p>
           <div class="hero-actions">
-            <a href="tel:+919601841748" class="btn btn-primary"
-              >Speak to Akshay Lukhi</a
-            >
+            <a href="#contact" class="btn btn-primary">Book a Consultation</a>
             <a href="#services" class="btn btn-ghost">View Services</a>
           </div>
           <div class="hero-meta">
-            <div>
-              <span class="k">Proprietor</span>
-              <span class="v">Akshay Lukhi</span>
-            </div>
-            <div>
-              <span class="k">Phone</span>
-              <span class="v">+91 96018 41748</span>
-            </div>
-            <div>
-              <span class="k">Location</span>
-              <span class="v">Utran, Surat</span>
-            </div>
+            <div><strong>9</strong>Core Services</div>
+            <div><strong>1:1</strong>Direct Proprietor Access</div>
+            <div><strong>Surat</strong>VIP Circle, Utran</div>
           </div>
         </div>
-        <div class="seal-wrap">
-          <svg
-            class="seal seal-spin"
-            viewBox="0 0 320 320"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle class="seal-ring seal-draw" cx="160" cy="160" r="140" />
-            <circle
-              class="seal-inner-ring seal-draw-2"
-              cx="160"
-              cy="160"
-              r="112"
-            />
-            <path
-              class="seal-star"
-              d="M160 90 L172 140 L222 140 L182 170 L196 220 L160 190 L124 220 L138 170 L98 140 L148 140 Z"
-            />
-            <text class="seal-text">
-              <textPath href="#circlePath" startOffset="0%">
-                AKSHAY LUKHI &amp; CO. — SURAT — EST. PRACTICE — TAX · AUDIT ·
-                GST —
-              </textPath>
-            </text>
-            <path
-              id="circlePath"
-              d="M160,160 m-126,0 a126,126 0 1,1 252,0 a126,126 0 1,1 -252,0"
-              fill="none"
-            />
-          </svg>
+
+        <div class="ascent-wrap">
+          <div class="ascent-card">
+            <svg viewBox="0 0 400 408" xmlns="http://www.w3.org/2000/svg">
+              <defs></defs>
+              <g class="ascent-grid">
+                <line x1="0" y1="80" x2="400" y2="80" />
+                <line x1="0" y1="160" x2="400" y2="160" />
+                <line x1="0" y1="240" x2="400" y2="240" />
+                <line x1="0" y1="320" x2="400" y2="320" />
+              </g>
+              <path
+                class="ascent-line"
+                d="M30,330 L110,190 L150,255 L215,150 L260,205 L340,90"
+              />
+              <path class="ascent-arrowhead" d="M300,90 L345,88 L347,133" />
+              <circle
+                class="ascent-dot"
+                cx="30"
+                cy="330"
+                r="5"
+                fill="#F6F5F1"
+                style="animation-delay: 0.5s"
+              />
+              <circle
+                class="ascent-dot"
+                cx="150"
+                cy="255"
+                r="5"
+                fill="#C9A55C"
+                style="animation-delay: 1.6s"
+              />
+              <circle
+                class="ascent-dot"
+                cx="340"
+                cy="90"
+                r="6"
+                fill="#F6F5F1"
+                style="animation-delay: 3.1s"
+              />
+              <text x="30" y="352" class="ascent-label">ACCOUNTS</text>
+              <text x="140" y="378" class="ascent-label">COMPLIANCE</text>
+              <text x="280" y="66" class="ascent-label">GROWTH</text>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ================= MARQUEE STRIP ================= -->
+    <div class="strip">
+      <div class="track">
+        <span>Accounting</span><span>Income Tax</span><span>GST</span
+        ><span>Audit</span><span>Insurance</span><span>Investment</span
+        ><span>Business Registration</span><span>EPCG Services</span
+        ><span>Trademark</span> <span>Accounting</span><span>Income Tax</span
+        ><span>GST</span><span>Audit</span><span>Insurance</span
+        ><span>Investment</span><span>Business Registration</span
+        ><span>EPCG Services</span><span>Trademark</span>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
     <section class="about" id="about">
-      <div class="wrap about-grid">
+      <div class="wrap">
         <div class="reveal">
-          <div class="ledger">
-            <div class="role">Proprietor</div>
-            <h3>Akshay Lukhi</h3>
-            <p style="color: var(--muted); font-size: 14.5px">
-              Heading the firm's accounting, taxation and regulatory practice,
-              working directly with clients across Surat.
-            </p>
-            <div class="ledger-rows">
-              <div class="ledger-row">
-                <span>Firm</span><span>Akshay Lukhi &amp; Co.</span>
-              </div>
-              <div class="ledger-row">
-                <span>Base</span><span>Utran, Surat</span>
-              </div>
-              <div class="ledger-row">
-                <span>Phone</span><span>96018 41748</span>
-              </div>
-              <div class="ledger-row">
-                <span>Email</span><span>aksh.patel.7712@gmail.com</span>
-              </div>
+          <div class="about-portrait">
+            <img src="akshy.png" alt="Akshay Lukhi & Co." />
+            <div class="about-card">
+              <div class="k">Proprietor</div>
+              <div class="v">Akshay Lukhi</div>
             </div>
           </div>
         </div>
         <div class="about-copy reveal">
-          <div class="eyebrow">About the Firm</div>
-          <p class="lead">
-            A single point of contact for every number, filing and registration
-            your business depends on.
+          <div class="eyebrow">About the practice</div>
+          <h2>
+            One point of contact for every number that matters to your business.
+          </h2>
+          <p>
+            Akshay Lukhi &amp; Co. is a Surat-based consultancy built around a
+            simple idea: your accounts, taxes and registrations should be
+            handled by someone who knows your full financial picture &mdash; not
+            a different desk for every form.
           </p>
           <p>
-            Akshay Lukhi &amp; Co. works with individuals, traders and small
-            businesses on the everyday and the official — bookkeeping and
-            returns, GST and audit, insurance and investment planning, and the
-            registrations that let a business legally operate and protect its
-            name.
+            From day-to-day bookkeeping to income tax filing, GST returns,
+            audits, and business or trademark registration, every engagement is
+            managed directly by proprietor Akshay Lukhi.
           </p>
-          <p>
-            Based out of Utran, Surat, the firm keeps its client base close and
-            its service personal — direct access to the proprietor,
-            straightforward advice, and paperwork handled on time.
-          </p>
-          <div class="pillars">
-            <div class="pillar">
-              <h4>Direct Access</h4>
-              <p>You deal with the proprietor, not a call centre.</p>
-            </div>
-            <div class="pillar">
-              <h4>Full Compliance</h4>
-              <p>Tax, GST and audit handled under one roof.</p>
-            </div>
-            <div class="pillar">
-              <h4>Beyond Filing</h4>
-              <p>Insurance and investment guidance alongside compliance.</p>
-            </div>
-            <div class="pillar">
-              <h4>Registrations</h4>
-              <p>Business, EPCG and trademark work handled end-to-end.</p>
-            </div>
-          </div>
+          <ul class="about-points">
+            <li>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 12l5 5L20 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              >Direct proprietor involvement
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 12l5 5L20 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              >Filings kept audit-ready
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 12l5 5L20 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              >Clear, jargon-free advice
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 12l5 5L20 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              >Based in Utran, Surat
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="eyebrow">What We Handle</div>
-          <h2>Nine services. One firm.</h2>
+          <div class="eyebrow">What we handle</div>
+          <h2>Nine services. One consultant who knows the full file.</h2>
           <p>
-            From routine bookkeeping to one-time registrations, each service is
-            handled with the same attention to detail and deadlines.
+            Each engagement is treated as part of the same financial picture
+            &mdash; not a one-off form.
           </p>
         </div>
-        <div class="service-grid reveal-stagger">
-          <div class="service-card">
-            <span class="service-code">AC / 01</span>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-num">01</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="3" width="14" height="18" rx="1.5" />
+                <line x1="8" y1="7" x2="16" y2="7" />
+                <line x1="8" y1="11" x2="10" y2="11" />
+                <line x1="12" y1="11" x2="14" y2="11" />
+                <line x1="16" y1="11" x2="16" y2="11" />
+                <line x1="8" y1="15" x2="10" y2="15" />
+                <line x1="12" y1="15" x2="14" y2="15" />
+                <line x1="16" y1="15" x2="16" y2="15" />
+              </svg>
+            </div>
             <h3>Accounting</h3>
             <p>
-              Bookkeeping and financial records kept accurate and current, month
-              on month.
+              Bookkeeping, ledgers and financial statements kept accurate and
+              current, month after month.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">IT / 02</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">02</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 20h16" />
+                <path d="M6 20V10l6-6 6 6v10" />
+                <line x1="10" y1="20" x2="10" y2="14" />
+                <line x1="14" y1="20" x2="14" y2="14" />
+              </svg>
+            </div>
             <h3>Income Tax</h3>
             <p>
-              Return filing, planning and assessment support for individuals and
-              businesses.
+              Return filing, tax planning and assessment support for
+              individuals, professionals and firms.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">GST / 03</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">03</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9" />
+                <line x1="8" y1="16" x2="16" y2="8" />
+                <circle cx="9" cy="9" r="1" />
+                <circle cx="15" cy="15" r="1" />
+              </svg>
+            </div>
             <h3>GST</h3>
             <p>
-              Registration, monthly returns and reconciliation under GST law.
+              Registration, monthly and annual returns, reconciliation, and
+              ongoing GST compliance.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">AU / 04</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">04</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="6" />
+                <line x1="15.5" y1="15.5" x2="20" y2="20" />
+                <line x1="9" y1="11" x2="13" y2="11" />
+              </svg>
+            </div>
             <h3>Audit</h3>
             <p>
-              Statutory and internal audit support to keep your books
-              defensible.
+              Statutory and internal audits carried out with clear documentation
+              and practical findings.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">IN / 05</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">05</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
             <h3>Insurance</h3>
             <p>
-              Guidance on policies that protect your business and your family.
+              Guidance on selecting and managing life, health and business
+              insurance cover.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">IV / 06</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">06</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <polyline points="4,16 10,10 14,14 20,6" />
+                <polyline points="15,6 20,6 20,11" />
+              </svg>
+            </div>
             <h3>Investment</h3>
             <p>
-              Practical advice on where and how to put your surplus to work.
+              Practical planning to help you place savings into instruments
+              suited to your goals.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">BR / 07</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">07</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="9" width="16" height="11" rx="1" />
+                <path d="M8 9V6a4 4 0 018 0v3" />
+                <line x1="12" y1="13" x2="12" y2="16" />
+              </svg>
+            </div>
             <h3>Business Registration</h3>
             <p>
-              Setting up the right legal structure for a new or growing
-              business.
+              Setting up proprietorships, partnerships and companies with the
+              right structure from day one.
             </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">EP / 08</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">08</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 14l6-9 6 3 6-6" />
+                <path d="M15 4h4v4" />
+                <path d="M3 20h18" />
+              </svg>
+            </div>
             <h3>EPCG Services</h3>
-            <p>Export Promotion Capital Goods scheme filings and compliance.</p>
+            <p>
+              Export Promotion Capital Goods scheme applications, obligations
+              and export documentation support.
+            </p>
           </div>
-          <div class="service-card">
-            <span class="service-code">TM / 09</span>
+
+          <div class="service-card reveal">
+            <div class="service-num">09</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9" />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  font-size="9"
+                  fill="currentColor"
+                  stroke="none"
+                  font-family="IBM Plex Mono"
+                >
+                  TM
+                </text>
+              </svg>
+            </div>
             <h3>Trademark</h3>
-            <p>Search, filing and protection for your brand's name and mark.</p>
+            <p>
+              Trademark search, filing and registration to protect your brand
+              name and mark.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- ================= WHY / PROCESS ================= -->
+    <section class="section why" id="why">
       <div class="wrap">
         <div class="section-head reveal">
-          <div class="eyebrow">Get In Touch</div>
-          <h2>Bring your paperwork. We'll take it from there.</h2>
-          <p>
-            Call, write, or come by the office in Utran — whichever is easiest
-            for you.
-          </p>
+          <div class="eyebrow">How engagements run</div>
+          <h2>A straightforward line from paperwork to filed and compliant.</h2>
+          <p>The same steady process, whatever the service.</p>
         </div>
-        <div class="contact-grid">
-          <div class="contact-cards reveal">
-            <div class="contact-card">
-              <div class="ic">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="mono">STEP 01</div>
+            <h4>Understand</h4>
+            <p>
+              A direct conversation about your accounts, filings or registration
+              need.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="mono">STEP 02</div>
+            <h4>Gather</h4>
+            <p>
+              Documents and figures collected and organised against a clear
+              checklist.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="mono">STEP 03</div>
+            <h4>Prepare &amp; File</h4>
+            <p>
+              Returns, statements or applications prepared, reviewed, and
+              submitted on time.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="mono">STEP 04</div>
+            <h4>Follow Through</h4>
+            <p>
+              Acknowledgements, notices and renewals tracked so nothing is
+              missed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="eyebrow">Get in touch</div>
+          <h2
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-size: clamp(1.9rem, 3vw, 2.4rem);
+              color: var(--navy);
+              font-weight: 600;
+              margin: 14px 0 8px;
+            "
+          >
+            Talk to Akshay Lukhi directly.
+          </h2>
+          <p style="color: var(--ink-soft); margin-bottom: 6px">
+            No call centre, no hand-offs &mdash; every enquiry reaches the
+            proprietor.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24">
                   <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.11 4.18 2 2 0 014.1 2h3a2 2 0 012 1.72c.12.9.33 1.79.63 2.65a2 2 0 01-.45 2.11L8.1 9.65a16 16 0 006.25 6.25l1.17-1.18a2 2 0 012.11-.45c.86.3 1.75.51 2.65.63A2 2 0 0122 16.92z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
               </div>
               <div>
-                <div class="k">Phone</div>
+                <div class="k">Mobile</div>
                 <a class="v" href="tel:+919601841748">+91 96018 41748</a>
               </div>
-            </div>
-            <div class="contact-card">
-              <div class="ic">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path d="M4 4h16v16H4z" opacity="0" />
-                  <path d="M22 6l-10 7L2 6" />
-                  <rect x="2" y="4" width="20" height="16" rx="1" />
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path
+                    d="M3 7l9 6 9-6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
               </div>
               <div>
                 <div class="k">Email</div>
-                <a
-                  class="v"
-                  href="mailto:aksh.patel.7712@gmail.com"
-                  style="font-size: 15px"
+                <a class="v" href="mailto:aksh.patel.7712@gmail.com"
                   >aksh.patel.7712@gmail.com</a
                 >
               </div>
-            </div>
-            <div class="contact-card">
-              <div class="ic">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            </li>
+            <li>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
               <div>
-                <div class="k">Office Address</div>
-                <div class="v small">
+                <div class="k">Address</div>
+                <div class="v" style="font-weight: 500">
                   140, Royal Square, VIP Circle,<br />Utran, Surat, Gujarat
                 </div>
               </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>Send an enquiry</h3>
+          <p>Share a few details and Akshay will get back to you directly.</p>
+          <form id="enquiryForm">
+            <div class="form-row">
+              <label for="fname">Name</label>
+              <input
+                id="fname"
+                type="text"
+                placeholder="Your full name"
+                required
+              />
             </div>
-            <div class="contact-card">
-              <div class="ic">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-              </div>
-              <div>
-                <div class="k">Office Hours</div>
-                <div class="v small">
-                  Monday – Saturday<br />10:00 AM – 7:00 PM
-                </div>
-              </div>
+            <div class="form-row">
+              <label for="fphone">Phone</label>
+              <input
+                id="fphone"
+                type="tel"
+                placeholder="Your mobile number"
+                required
+              />
             </div>
-          </div>
-          <div class="map-frame reveal">
-            <iframe
-              src="https://www.google.com/maps?q=Royal+Square+VIP+Circle+Utran+Surat+Gujarat&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Office location map"
-            ></iframe>
-          </div>
+            <div class="form-row">
+              <label for="fservice">Service</label>
+              <input
+                id="fservice"
+                type="text"
+                placeholder="e.g. GST, Income Tax, Trademark"
+              />
+            </div>
+            <div class="form-row">
+              <label for="fmsg">Message</label>
+              <textarea
+                id="fmsg"
+                placeholder="Tell us briefly what you need"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          </form>
         </div>
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-      <div class="wrap footer-grid">
-        <div class="brand">
-          <svg
-            class="brand-mark"
-            viewBox="0 0 40 40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18.5"
-              fill="none"
-              stroke="#C08A34"
-              stroke-width="1.4"
-            />
-            <circle
-              cx="20"
-              cy="20"
-              r="13.5"
-              fill="none"
-              stroke="#DCB05C"
-              stroke-width="1"
-            />
-            <text
-              x="20"
-              y="24.5"
-              text-anchor="middle"
-              font-family="Fraunces, serif"
-              font-size="14"
-              fill="#F6F3EB"
-            >
-              AL
-            </text>
-          </svg>
-          <div class="brand-text">
-            <div class="name">Akshay Lukhi &amp; Co.</div>
-            <div class="sub">Accounting &amp; Tax Consultants</div>
-          </div>
+      <div class="wrap">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Akshay Lukhi & Co." />
+          <span>Akshay Lukhi &amp; Co.</span>
         </div>
-        <div class="fnote">
-          140, Royal Square, VIP Circle, Utran, Surat &nbsp;·&nbsp; 96018 41748
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="fine">
+          &copy; <span id="year"></span> Akshay Lukhi &amp; Co. &mdash; Surat,
+          Gujarat
         </div>
       </div>
     </footer>
 
+    <!-- ================= WHATSAPP FAB ================= -->
+    <a
+      class="fab"
+      href="https://wa.me/919601841748"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="WhatsApp"
+        role="img"
+        viewBox="0 0 512 512"
+      >
+        <rect width="512" height="512" rx="15%" fill="#25d366" />
+        <path
+          fill="#25d366"
+          stroke="#ffffff"
+          stroke-width="26"
+          d="M123 393l14-65a138 138 0 1150 47z"
+        />
+        <path
+          fill="#ffffff"
+          d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+        />
+      </svg>
+    </a>
+
     <script>
-      // sticky header shadow
+      // header scroll state
       const header = document.getElementById("siteHeader");
       window.addEventListener("scroll", () => {
-        header.classList.toggle("scrolled", window.scrollY > 10);
+        header.classList.toggle("scrolled", window.scrollY > 30);
       });
 
+      // mobile nav toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      let navOpen = false;
+      menuToggle.addEventListener("click", () => {
+        navOpen = !navOpen;
+        mobileNav.style.display = navOpen ? "flex" : "none";
+      });
+      mobileNav.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          navOpen = false;
+          mobileNav.style.display = "none";
+        }),
+      );
+
       // scroll reveal
-      const revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
+      const revealEls = document.querySelectorAll(".reveal");
       const io = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -1237,21 +1579,28 @@
         },
         { threshold: 0.15 },
       );
-      revealEls.forEach((el) => io.observe(el));
-
-      // mobile nav toggle (simple show/hide)
-      const navToggle = document.getElementById("navToggle");
-      const navLinks = document.querySelector(".nav-links");
-      const navCta = document.querySelector(".nav-cta");
-      navToggle.addEventListener("click", () => {
-        const open = navLinks.style.display === "flex";
-        navLinks.style.display = open ? "none" : "flex";
-        navCta.style.display = open ? "none" : "inline-flex";
-        navLinks.style.cssText +=
-          "flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0E2A3F;padding:20px 32px;gap:18px;";
-        navCta.style.cssText +=
-          "position:absolute;top:calc(100% + 190px);left:32px;";
+      revealEls.forEach((el, i) => {
+        el.style.transitionDelay = (i % 3) * 0.08 + "s";
+        io.observe(el);
       });
+
+      // footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple enquiry form -> opens mail client with prefilled details
+      document
+        .getElementById("enquiryForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("fname").value;
+          const phone = document.getElementById("fphone").value;
+          const service = document.getElementById("fservice").value;
+          const msg = document.getElementById("fmsg").value;
+          const body = encodeURIComponent(
+            `Name: ${name}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${msg}`,
+          );
+          window.location.href = `mailto:aksh.patel.7712@gmail.com?subject=Website Enquiry&body=${body}`;
+        });
     </script>
   </body>
 </html>
