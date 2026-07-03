@@ -1586,20 +1586,25 @@
 
       // footer year
       document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
-      // simple enquiry form -> opens mail client with prefilled details
+    <script>
       document
         .getElementById("enquiryForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+
           const name = document.getElementById("fname").value;
           const phone = document.getElementById("fphone").value;
           const service = document.getElementById("fservice").value;
-          const msg = document.getElementById("fmsg").value;
-          const body = encodeURIComponent(
-            `Name: ${name}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${msg}`,
+          const message = document.getElementById("fmsg").value;
+
+          const text = `*AKSHAY I LUKHI & CO.*\nName : ${name}\nMobile : ${phone}\nService Required : ${service || "Not Specified"}\nMessage : ${message || "No message provided"}`;
+
+          window.open(
+            `https://wa.me/919601841748?text=${encodeURIComponent(text)}`,
+            "_blank",
           );
-          window.location.href = `mailto:aksh.patel.7712@gmail.com?subject=Website Enquiry&body=${body}`;
         });
     </script>
   </body>
